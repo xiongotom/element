@@ -1,6 +1,7 @@
 <template>
   <button
     class="el-button"
+    v-ripples
     @click="handleClick"
     :disabled="buttonDisabled || loading"
     :autofocus="autofocus"
@@ -23,6 +24,8 @@
   </button>
 </template>
 <script>
+  import Ripples from 'element-ui/src/directives/ripples/ripples';
+
   export default {
     name: 'ElButton',
 
@@ -33,6 +36,10 @@
       elFormItem: {
         default: ''
       }
+    },
+
+    directives: {
+      Ripples
     },
 
     props: {
