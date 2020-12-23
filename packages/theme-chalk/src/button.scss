@@ -20,6 +20,7 @@
   margin: 0;
   transition: .1s;
   font-weight: $--button-font-weight;
+  // box-shadow: $--box-shadow-light-deep;
   @include utils-user-select(none);
   & + & {
     margin-left: 10px;
@@ -31,7 +32,7 @@
   &:focus {
     color: $--color-primary;
     border-color: $--color-primary-light-7;
-    background-color: $--color-primary-light-9;
+    background-color: $--color-primary-light-7;
   }
 
   &:active {

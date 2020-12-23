@@ -1,5 +1,3 @@
-import './VRipple.scss';
-
 const DELAY_RIPPLE = 80;
 
 
