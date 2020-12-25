@@ -24,7 +24,7 @@
   </button>
 </template>
 <script>
-  import Ripples from 'element-ui/src/directives/ripples/ripples';
+  import Ripples from 'element-ui-material/src/directives/ripples/ripples';
 
   export default {
     name: 'ElButton',
