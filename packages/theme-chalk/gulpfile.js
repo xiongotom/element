@@ -12,7 +12,7 @@ function compile() {
       overrideBrowserslist: ['> 0.15% in CN'],
       cascade: false
     }))
-    .pipe(cssmin())
+    .pipe(cssmin({showLog: true}))
     .pipe(dest('./lib'));
 }
 

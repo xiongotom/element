@@ -84,6 +84,7 @@ import Drawer from '../packages/drawer/index.js';
 import Popconfirm from '../packages/popconfirm/index.js';
 import locale from 'element-ui/src/locale';
 import CollapseTransition from 'element-ui/src/transitions/collapse-transition';
+import Ripples from './directives/ripples/ripples';
 
 const components = [
   Pagination,
@@ -176,6 +177,7 @@ const install = function(Vue, opts = {}) {
 
   Vue.use(InfiniteScroll);
   Vue.use(Loading.directive);
+  Vue.directive('ripples', Ripples);
 
   Vue.prototype.$ELEMENT = {
     size: opts.size || '',
